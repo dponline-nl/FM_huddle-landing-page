@@ -1,0 +1,203 @@
+/*
+- Violet: hsl(257, 40%, 49%)
+- Soft Magenta: hsl(300, 69%, 71%)
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("./img/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: hsl(0, 0%, 100%);
+}
+
+footer {
+    width: 100%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+.wrapper {
+    margin: 0 auto;
+    min-width: 375px;
+    max-width: 500px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.img-logo {
+    max-width: 200px;
+    margin: 0 0 4.2rem 0;
+}
+
+.img-mockup {
+    margin-bottom: 5rem;
+}
+
+.txt-about {
+    font-size: 1.2rem;
+    margin: 1.1rem 0 1.6rem 0;
+    line-height: 1.5;
+}
+
+.btn-register {
+    border: none;
+    border-radius: 30px;
+    padding: 0.9rem 5rem;
+    font-size: 1rem;
+    color: hsl(257, 40%, 49%);
+    font-weight: 400;
+    box-shadow: 3px 2px 8px hsl(257, 40%, 29%);
+    margin-bottom: 5rem;
+    cursor: pointer;
+}
+
+.btn-register:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+
+.btn-social {
+    position: relative;
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    margin: 0 0.4rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.btn-social:hover {
+    border: 1px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+.btn-social > i {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+}
+
+.attribution {
+    margin-top: 4rem;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: hsl(300, 69%, 71%);
+}
+
+.attribution a:hover {
+    opacity: 0.6;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        background-image: url("./img/bg-desktop.svg");
+        background-position: top left -80px;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    section {
+        padding: 2.3rem;
+        min-width: 380px;
+        max-width: 50%;
+    }
+
+    h1 {
+        width: 19rem;
+        font-size: 1.6rem;
+    }
+
+    .wrapper {
+        max-width: 1200px;
+    }
+
+    .img-logo {
+        margin-bottom: 1.5rem;
+    }
+
+    .img-mockup {
+        max-width: 100%;
+        margin: 0;
+        align-self: center;
+    }
+
+    .btn-register {
+        margin: 0;
+    }
+
+    .nav-footer-social {
+        text-align: right;
+        margin-right: 3rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-position: top -25px left -110px;
+    }
+
+    section {
+        max-width: 630px;
+    }
+
+    h1 {
+        width: 100%;
+        font-size: 2.6rem;
+    }
+
+    .wrapper {
+        max-width: 1440px;
+        padding: 2rem 4rem;
+    }
+
+    .img-logo {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .nav-footer-social {
+        margin-top: 2rem;
+    }
+}
