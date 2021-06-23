@@ -125,10 +125,7 @@ h1 {
 
 @media screen and (min-width: 800px) {
     body {
-        background-image: url("./img/bg-desktop.svg");
-        background-position: top left -80px;
         background-attachment: fixed;
-        background-size: cover;
         height: 100vh;
     }
 
@@ -139,9 +136,8 @@ h1 {
     }
 
     section {
-        padding: 2.3rem;
-        min-width: 380px;
-        max-width: 50%;
+        padding-left: 2.3rem;
+        max-width: 400px;
     }
 
     h1 {
@@ -150,7 +146,7 @@ h1 {
     }
 
     .wrapper {
-        max-width: 1200px;
+        max-width: 960px;
     }
 
     .img-logo {
@@ -158,28 +154,37 @@ h1 {
     }
 
     .img-mockup {
-        max-width: 100%;
         margin: 0;
         align-self: center;
+    }
+
+    .txt-about {
+        font-size: 0.95rem;
     }
 
     .btn-register {
         margin: 0;
     }
 
+    .attribution {
+        margin-top: 1rem;
+    }
+
     .nav-footer-social {
-        text-align: right;
-        margin-right: 3rem;
+        text-align: center;
+        margin-top: 4rem;
     }
 }
 
 @media screen and (min-width: 1200px) {
     body {
-        background-position: top -25px left -110px;
+        background-image: url("./img/bg-desktop.svg");
+        background-position: top left;
+        background-size: 90% 100vh;
     }
 
     section {
-        max-width: 630px;
+        max-width: 590px;
     }
 
     h1 {
@@ -189,15 +194,17 @@ h1 {
 
     .wrapper {
         max-width: 1440px;
-        padding: 2rem 4rem;
+        padding: 0 0 2rem 4rem;
     }
 
     .img-logo {
-        margin-top: 2rem;
-        margin-bottom: 4rem;
+        margin-top: 2.5rem;
+        margin-bottom: 6.5rem;
     }
 
     .nav-footer-social {
-        margin-top: 2rem;
+        text-align: right;
+        margin-right: 2rem;
+        margin-top: 1.5rem;
     }
 }
